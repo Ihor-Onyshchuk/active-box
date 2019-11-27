@@ -1,10 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en"></html>
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/apple-touch-icon.png">
+        <link rel="manifest" href="img/favicon/apple-touch-icon.png">
+        <link rel="mask-icon" href="img/favicon/apple-touch-icon.png" color="#5bbad5">
+        
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Описание страницы">
+        <meta name="keywords" content="Описание страницы">
+        <meta name="google" content="notranslate">
         <title>ActiveBox</title> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
 
@@ -19,28 +35,60 @@
                 </g>
         </symbol>
 
+        <symbol id="twitter" viewBox="0 0 449.956 449.956">
+            <g>
+                <path d="M449.956,85.657c-17.702,7.614-35.408,12.369-53.102,14.279c19.985-11.991,33.503-28.931,40.546-50.819
+		            c-18.281,10.847-37.787,18.268-58.532,22.267c-18.274-19.414-40.73-29.125-67.383-29.125c-25.502,0-47.246,8.992-65.24,26.98
+		            c-17.984,17.987-26.977,39.731-26.977,65.235c0,6.851,0.76,13.896,2.284,21.128c-37.688-1.903-73.042-11.372-106.068-28.407
+		            C82.46,110.158,54.433,87.46,31.403,59.101c-8.375,14.272-12.564,29.787-12.564,46.536c0,15.798,3.711,30.456,11.138,43.97
+		            c7.422,13.512,17.417,24.455,29.98,32.831c-14.849-0.572-28.743-4.475-41.684-11.708v1.142c0,22.271,6.995,41.824,20.983,58.674
+		            c13.99,16.848,31.645,27.453,52.961,31.833c-7.995,2.091-16.086,3.138-24.269,3.138c-5.33,0-11.136-0.475-17.416-1.42
+		            c5.9,18.459,16.75,33.633,32.546,45.535c15.799,11.896,33.691,18.028,53.677,18.418c-33.498,26.262-71.66,39.393-114.486,39.393
+		            c-8.186,0-15.607-0.373-22.27-1.139c42.827,27.596,90.03,41.394,141.612,41.394c32.738,0,63.478-5.181,92.21-15.557
+		            c28.746-10.369,53.297-24.267,73.665-41.686c20.362-17.415,37.925-37.448,52.674-60.097c14.75-22.651,25.738-46.298,32.977-70.946
+		            c7.23-24.653,10.848-49.344,10.848-74.092c0-5.33-0.096-9.325-0.287-11.991C421.785,120.202,437.202,104.306,449.956,85.657z"/>
+            </g>
+
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 455 455">
+            <g>
+                <path  d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+                <path  d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                     M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+                    c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+                    c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+                    c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+                    z"/>
+            </g>
+        </symbol>
     </svg>
 <!--Header-->
-        <header class="header">
+        <header class="header " id="header">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
                             <img src="D:/Sites/active-box/img/activebox-logo.png" alt="">
                     </div>
                     
-                    <nav class="nav">
-                        <a class="nav__link" href="#">Features</a>
-                        <a class="nav__link" href="#">Works</a>
-                        <a class="nav__link" href="#">Our Team</a>
-                        <a class="nav__link" href="#">Testimonials</a>
-                        <a class="nav__link" href="#">Download</a>
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="#" data-scroll="#features">Features</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                        <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+                        <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
+                        <a class="nav__link" href="#" data-scroll="#download">Download</a>
                     </nav> 
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item">Menu</span>
+                    </button>
+
                 </div>  
             </div>
         </header>
 
 <!--Intro-->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner"> 
                     <h1 class="intro__title">Your Favorite One Page Multi Purpose Template </h1>
@@ -49,10 +97,10 @@
                 </div>
             </div>
         </div>
-                
-     
-        <!--Features-->
-        <div class="container">
+    
+
+<!--Features-->
+        <div class="container" id="features">
             <div class="features">
                 <div class="features__item">
                     <img class="features__icon" src="D:/Sites/active-box/img/feature/feature-1.png" alt="">
@@ -94,7 +142,7 @@
 
 
 <!-- Works -->
-        <div class="works">
+        <div class="works" id="works">
             <div class="works__item">
                 <img class="works__photo" src="D:/Sites/active-box/img/work/work-1.jpg" alt="">
                 <div class="works__content">
@@ -154,7 +202,7 @@
         </div>
 
 <!-- Team -->
-        <div class="team">
+        <div class="team" id="team">
             <div class="container">
                 <div class="team__inner">
                     
@@ -168,13 +216,22 @@
                         </div>
 
                             <div class="social">
-                                <a class="social__item" href="#">
+                                <a class="social__item" href="#" target="_blank">
                                     <svg class="social__icon">
                                         <use xlink:href="#facebook"></use>
                                     </svg>
                                 </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
                             </div>
-                    
 
                     </div>
                 
@@ -186,10 +243,25 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="team__social">
-                                
+
+                            <div class="social">
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>                    
                             </div>
-                    </div>
+                    </div>        
 
                     <div class="team__item">
                             <img class="team__photo" src="D:/Sites/active-box/img/team/team-3.jpg" alt="">
@@ -199,7 +271,24 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="team__social"></div>
+
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </div>
                     </div>
 
                     <div class="team__item">
@@ -210,12 +299,135 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="team__social"></div>
+
+                            <div class="social">
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                            </div>
                     </div>
 
                 </div>
             </div>
         </div>
 
-    </body>
+<!-- Testimonials -->
+<div class="reviews" id="reviews">
+    <div class="container">
+
+        <div class="reviews__slider" id="reviewsSlider">
+            <div class="slick-item">
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img  class="reviews__img" src="D:/Sites/active-box/img/review/review-1.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                        <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                    </div>
+                </div>
+            </div>
+      
+
+            <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img  class="reviews__img" src="D:/Sites/active-box/img/review/review-1.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">Susan Sims, Interaction Designer at XYZ and last child was black nuers Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                            <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Download -->
+<div class="download" id="download">
+    <div class="container">
+        <h3 class="download__title">Are You Ready to Start? Download For Free! </h3>
+        <div class="download__text">
+            <p>Fusce dapibus, tellus ac cursus commodo</p>
+        </div>
+        <a class="btn  btn--red  btn--long" href="#">Download Here</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__block">
+                <h4 class="footer__title">Location</h4>
+                <address class="footer__address">
+                    <div>3481 Melrose Place</div>
+                    <div>Beverly Hills, CA 90210</div>
+                </address>
+
+            </div>
+
+            <div class="footer__block">
+                    <h4 class="footer__title">Share with Love</h4>
+                        <div class="social  social--footer">
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            </div>
+            
+            <div class="footer__block">
+                        <h4 class="footer__title">About ActiveBox</h4>
+                        <div class="footer__text">
+                            <p>Cras justo odio, dapibus ac facilisis in, egestatus eget quam. Donec ullancorper nulla non netus autor fringilla.</p>
+                        </div>
+        
+            </div>    
+        </div>
+    
+    </div>
+
+    <div class="copyright">
+        <div class="conteiner">
+            <div class="copyright__text">
+                <div>Copiright 2015 ActiveBox. All Rights Reserved</div>
+                <div>Made with  <span>by Kanal Chaneman</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Javascript -->        
+<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+
+</body>
 </html>
